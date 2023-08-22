@@ -1,11 +1,14 @@
-#include <iostream>
-#include <cmath>
-#include <random>
-#include <functional>
-#include <vector>
-#include <chrono>
-#include <thread>
-#include "pricole.h"
+#ifndef MATESH_H_
+	#define MATESH_H_
+	#include <iostream>
+	#include <cmath>
+	#include <random>
+	#include <functional>
+	#include <vector>
+	#include <chrono>
+	#include <thread>
+	#include "pricole.h"
+#endif
 
 double factorial(double namber)
 {
@@ -32,12 +35,12 @@ void minus(double** namber1, double** namber2)
 		int random;
 		srand(time(0));
 
-		std::cout << "Ну чтож дед инсайт выбери число от 1 до 4:";
+		std::cout << "пїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ 1 пїЅпїЅ 4:";
 		std::cin >> ugodai;
 		random = 1 + (rand() % 4);
 		if (ugodai == random)
 		{
-			std::cout << "Молодец угодал, выбери что ты хочешь\n1. Бесконечно 1000-7?\n2. Шутки дед инсайда?\n3. Текст песни дед инсада?\n4. Перезагрузка устройства.\nВаш выбор:";
+			std::cout << "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ\n1. пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ 1000-7?\n2. пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ?\n3. пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ?\n4. пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.\nпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ:";
 			std::cin >> ugodai;
 			switch (ugodai)
 			{
@@ -57,7 +60,7 @@ void minus(double** namber1, double** namber2)
 		}
 		else
 		{
-			std::cout << "Ну чтож не угодал, подожди 6 секунд и увидишь что будет(небойся)." << std::endl;
+			std::cout << "пїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅ 6 пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ(пїЅпїЅпїЅпїЅпїЅпїЅпїЅ)." << std::endl;
 			for (int i = 10; i >= 1; i--)
 			{
 				std::this_thread::sleep_for(std::chrono::milliseconds(1000));
@@ -110,11 +113,16 @@ void tang(double** namber)
 	std::cout << tan(**namber) << std::endl;
 }
 
+void inchs(double** namber)
+{
+	std::cout << log(**namber) << std::endl;
+}
+/*
 void inch(double** namber)
 {
 	std::cout << log(**namber) << std::endl;
 }
-
+*/
 void lg(double** namber)
 {
 	std::cout << log10(**namber) << std::endl;

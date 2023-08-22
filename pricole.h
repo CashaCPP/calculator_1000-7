@@ -1,8 +1,12 @@
-#pragma once
-#include <iostream>
-#include <ctime>
-#include <string>
-#include <windows.h>
+//#pragma once
+#ifndef PROCOLE_H_
+    #include <iostream>
+    #include <ctime>
+    #include <string>
+    #ifdef WINDOWS
+        #include <windows.h>
+    #endif
+#endif
 
 void text();
 
