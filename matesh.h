@@ -1,14 +1,14 @@
 #ifndef MATESH_H_
 	#define MATESH_H_
-	#include <iostream>
+	#include <stdio.h>
 	#include <cmath>
 	#include <random>
 	#include <functional>
 	#include <vector>
 	#include <chrono>
 	#include <thread>
-	#include "pricole.h"
 #endif
+#include "pricole.h"
 
 double factorial(double namber)
 {
@@ -24,7 +24,7 @@ double factorial(double namber)
 
 void plus(double** namber1, double** namber2)
 {
-	std::cout << **namber1 << "+" << **namber2 << "=" << **namber1 + **namber2 << std::endl;
+	printf("%d", "%c", "%d", "%c", "%d", "%c", **namber1, '+', **namber2, '=', **namber1 + **namber2, '\n');
 }
 
 void minus(double** namber1, double** namber2)
@@ -35,13 +35,13 @@ void minus(double** namber1, double** namber2)
 		int random;
 		srand(time(0));
 
-		std::cout << "�� ���� ��� ������ ������ ����� �� 1 �� 4:";
-		std::cin >> ugodai;
+		printf("Ну чтож дед инсайт выбери число от 1 до 4:");
+		scanf("%d", ugodai);
 		random = 1 + (rand() % 4);
 		if (ugodai == random)
 		{
-			std::cout << "������� ������, ������ ��� �� ������\n1. ���������� 1000-7?\n2. ����� ��� �������?\n3. ����� ����� ��� ������?\n4. ������������ ����������.\n��� �����:";
-			std::cin >> ugodai;
+			printf("Молодец угодал, выбери что ты хочешь\n1. Бесконечно 1000-7?\n2. Шутки дед инсайда?\n3. Текст песни дед инсада?\n4. Перезагрузка устройства.\nВаш выбор:");
+			scanf("%d", ugodai);
 			switch (ugodai)
 			{
 			case(1):
@@ -60,7 +60,7 @@ void minus(double** namber1, double** namber2)
 		}
 		else
 		{
-			std::cout << "�� ���� �� ������, ������� 6 ������ � ������� ��� �����(�������)." << std::endl;
+			printf("Ну чтож не угодал, подожди 6 секунд и увидишь что будет(небойся).");
 			for (int i = 10; i >= 1; i--)
 			{
 				std::this_thread::sleep_for(std::chrono::milliseconds(1000));
@@ -84,38 +84,38 @@ void minus(double** namber1, double** namber2)
 	}
 	else
 	{
-		std::cout << **namber1 << "-" << **namber2 << "=" << **namber1 - **namber2 << std::endl;
+		printf("%d", "%c", "%d", "%c", "%d", "%c", **namber1, '-', **namber2, '=', **namber1 - **namber2, '\n');
 	}
 }
 
 void umnoh(double** namber1, double** namber2)
 {
-	std::cout << **namber1 << "*" << **namber2 << "=" << **namber1 * **namber2 << std::endl;
+	printf("%d", "%c", "%d", "%c", "%d", "%c", **namber1, '*', **namber2, '=', **namber1 * **namber2, '\n');
 }
 
 void delit(double** namber1, double** namber2)
 {
-	std::cout << **namber1 << "/" << **namber2 << "=" << **namber1 / **namber2 << std::endl;
+	printf("%d", "%c", "%d", "%c", "%d", "%c", **namber1, '/', **namber2, '=', **namber1 / **namber2, '\n');
 }
 
 void step(double** namber1, double** namber2)
 {
-	std::cout << **namber1 << "^" << **namber2 << "=" << pow(**namber1, **namber2) << std::endl;
+	printf("%d", "%c", "%d", "%c", "%d", "%c", **namber1, '^', **namber2, '=', pow(**namber1, **namber2), '\n');
 }
 
 void koren(double** namber)
 {
-	std::cout << sqrt(**namber) << std::endl;
+	printf("%d", "%c", sqrt(**namber), '\n');
 }
 
 void tang(double** namber)
 {
-	std::cout << tan(**namber) << std::endl;
+	printf("%d", "%c", tan(**namber), '\n');
 }
 
 void inchs(double** namber)
 {
-	std::cout << log(**namber) << std::endl;
+	printf("%d", "%c", log(**namber), '\n');
 }
 /*
 void inch(double** namber)
@@ -125,35 +125,35 @@ void inch(double** namber)
 */
 void lg(double** namber)
 {
-	std::cout << log10(**namber) << std::endl;
+	printf("%d", "%c", log10(**namber), '\n');
 }
 
 void sin2(double** namber)
 {
-	std::cout << sin(**namber) << std::endl;
+	printf("%d", "%c", sin(**namber), '\n');
 }
 
 void cos2(double** namber)
 {
-	std::cout << cos(**namber) << std::endl;
+	printf("%d", "%c", cos(**namber), '\n');
 }
 
 void arcs(double** namber)
 {
-	std::cout << asin(**namber) << std::endl;
+	printf("%d", "%c", asin(**namber), '\n');
 }
 
 void arcc(double** namber)
 {
-	std::cout << acos(**namber) << std::endl;
+	printf("%d", "%c", acos(**namber), '\n');
 }
 
 void arct(double** namber)
 {
-	std::cout << atan(**namber) << std::endl;
+	printf("%d", "%c", atan(**namber), '\n');
 }
 
 void arcg(double** namber1, double** namber2)
 {
-	std::cout << atan2(**namber1, **namber2) << std::endl;
+	printf("%d", "%c", atan2(**namber1, **namber2), '\n');
 }

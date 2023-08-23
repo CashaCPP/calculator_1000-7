@@ -1,6 +1,6 @@
 #ifndef DOCUMENT_H_
     #define DOCUMENT_H_
-    #include <iostream>
+    #include <stdio.h>
 #endif
 
 void instuct();

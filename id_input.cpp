@@ -1,5 +1,6 @@
 #include "id_input.h"
 
+
 void id_input(int* id)
 {
 #ifdef WINDOWS
@@ -13,11 +14,11 @@ void id_input(int* id)
 	switch (*id)
 	{
 	case(8):
-		std::cout << std::endl;
+		printf("\n");
 		id_input(id);
 		break;
 	case(95):
-		std::cout << "_";
+		printf("_");
 		break;
 	case(68):
 		instuct();
@@ -28,97 +29,91 @@ void id_input(int* id)
 		id_input(id);
 		break;
 	case(33):
-		std::cout << "!";
+		printf("!");
 		break;
 	case(27):
 		exit(0);
 		break;
 	case(32):
-		std::cout << "";
+		printf("");
 		break;
 	case(40):
-		std::cout << "�������� ����� ������� ��� ����� �� � ������� ������� ��� ���� ��������";
+		printf("извините такой функции еще нетуб но я усердно работаю над этой функцией.");
+		initscr();
+		getch();
+		endwin();
 		break;
 	case(41):
-		std::cout << "�������� ����� ������� ��� ����� �� � ������� ������� ��� ���� ��������";
+		printf("извините такой функции еще нетуб но я усердно работаю над этой функцией.");
+		initscr();
+		getch();
+		endwin();
 		break;
 	case(48):
-		std::cout << "";
+		printf("");
 		break;
 	case(49):
-		std::cout << "";
+		printf("");
 		break;
 	case(50):
-		std::cout << "";
+		printf("");
 		break;
 	case(51):
-		std::cout << "";
+		printf("");
 		break;
 	case(52):
-		std::cout << "";
+		printf("");
 		break;
 	case(53):
-		std::cout << "";
+		printf("");
 		break;
 	case(54):
-		std::cout << "";
+		printf("");
 		break;
 	case(55):
-		std::cout << "";
+		printf("");
 		break;
 	case(56):
-		std::cout << "";
+		printf("");
 		break;
 	case(57):
-		std::cout << "";
+		printf("");
 		break;
 	case(84):
-		std::cout << "tg:";
-
+		printf("tg:");
 		break;
 	case(116):
-		std::cout << "tg:";
-
+		printf("tg:");
 		break;
 	case(73):
-		std::cout << "in:";
-
+		printf("in:");
 		break;
 	case(105):
-		std::cout << "in:";
-
+		printf("in:");
 		break;
 	case(100):
-		std::cout << "log10:";
-
+		printf("log10:");
 		break;
 	case(115):
-		std::cout << "sin:";
-
+		printf("sin:");
 		break;
 	case(99):
-		std::cout << "cos:";
-
+		printf("cos:");
 		break;
 	case(97):
-		std::cout << "arcsin:";
-
+		printf("arcsin:");
 		break;
 	case(114):
-		std::cout << "arccos:";
-
+		printf("arccos:");
 		break;
 	case(103):
-		std::cout << "arctg(1):";
-
+		printf("arctg(1):");
 		break;
-
 	case(71):
-		std::cout << "arctg(2):";
-
+		printf("arctg(2):");
 		break;
 	default:
-		std::cout << "eror ";
+		printf("error");
 		exit(0);
 	}
 }

@@ -8,6 +8,7 @@
         #include <ncurses.h>
     #endif
     #include "document_instruc.h"
+    #include <stdlib.h>
 #endif
 
 void id_input(int* id);

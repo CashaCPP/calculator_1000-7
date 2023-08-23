@@ -1,9 +1,11 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <string>
 #include <cmath>
 #include "argument.h"
 #include "id_input.h"
 #include "matesh.h"
+#include "pricole.h"
 
 //#define WINDOWS
 
@@ -28,74 +30,73 @@ int main()
 		double* namber2 = new double;
 		if (id == 33)
 		{
-			scanf("%s", )
-			std::cin >> str_namber;
+			scanf("%s", str_namber);
 			input2(&str_namber, *namber1);
-			std::cout << factorial(*namber1) << std::endl;
+			printf("%d", factorial(*namber1));
 		}
 		else if (id == 95)
 		{
-			std::cin >> str_namber;
+			scanf("%s", str_namber);
 			input2(&str_namber, *namber1);
 			koren(&namber1);
 		}
 		else if (id == 84 || id == 116)
 		{
-			std::cin >> str_namber;
+			scanf("%s", str_namber);
 			input2(&str_namber, *namber1);
 			tang(&namber1);
 		}
 		else if (id == 73 || id == 105)
 		{
-			std::cin >> str_namber;
+			scanf("%s", str_namber);
 			input2(&str_namber, *namber1);
 			inchs(&namber1);
 		}
 		else if (id == 100)
 		{
-			std::cin >> str_namber;
+			scanf("%s", str_namber);
 			input2(&str_namber, *namber1);
 			lg(&namber1);
 		}
 		else if (id == 115)
 		{
-			std::cin >> str_namber;
+			scanf("%s", str_namber);
 			input2(&str_namber, *namber1);
 			sin2(&namber1);
 		}
 		else if (id == 99)
 		{
-			std::cin >> str_namber;
+			scanf("%s", str_namber);
 			input2(&str_namber, *namber1);
 			cos2(&namber1);
 		}
 		else if (id == 97)
 		{
-			std::cin >> str_namber;
+			scanf("%s", str_namber);
 			input2(&str_namber, *namber1);
 			arcs(&namber1);
 		}
 		else if (id == 114)
 		{
-			std::cin >> str_namber;
+			scanf("%s", str_namber);
 			input2(&str_namber, *namber1);
 			arcc(&namber1);
 		}
 		else if (id == 103)
 		{
-			std::cin >> str_namber;
+			scanf("%s", str_namber);
 			input2(&str_namber, *namber1);
 			arct(&namber1);
 		}
 		else if (id == 71)
 		{
-			std::cin >> str_namber >> str_namber2;
+			scanf("%s", "%s", str_namber, str_namber2);
 			input(str_namber, *namber1, str_namber2, *namber2);
 			arcg(&namber1, &namber2);
 		}
 		else
 		{
-			std::cin >> str_namber >> znak >> str_namber2;
+			scanf("%s", "%c", "%s", str_namber, znak, str_namber2);
 			input(str_namber, *namber1, str_namber2, *namber2);
 			switch (znak)
 			{
@@ -125,7 +126,7 @@ int main()
 		delete namber2;
 		namber2 = nullptr;
 		system("pause");
-		std::cout << std::endl;
+		printf("\n");
 	}
 	return 0;
 }
