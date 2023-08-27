@@ -3,3 +3,7 @@ Calculator_100-7.vcxproj
 Calculator_100-7.vcxproj.filters
 test.cpp
 .vscode/
+*.o
+main
+myapp
+matesh.cpp

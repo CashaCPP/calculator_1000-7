@@ -39,15 +39,15 @@ void id_input(int* id)
 		break;
 	case(40):
 		printf("извините такой функции еще нетуб но я усердно работаю над этой функцией.");
-		initscr();
-		getch();
-		endwin();
+		//initscr();
+		*id = getch();
+		//endwin();
 		break;
 	case(41):
 		printf("извините такой функции еще нетуб но я усердно работаю над этой функцией.");
-		initscr();
-		getch();
-		endwin();
+		//initscr();
+		*id = getch();
+		//endwin();
 		break;
 	case(48):
 		printf("");
