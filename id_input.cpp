@@ -1,5 +1,17 @@
 #include "id_input.h"
 
+int getch( ) {
+   struct termios oldt,
+   newt;
+   int ch;
+   tcgetattr( STDIN_FILENO, &oldt );
+   newt = oldt;
+   newt.c_lflag &= ~( ICANON | ECHO );
+   tcsetattr( STDIN_FILENO, TCSANOW, &newt );
+   ch = getchar();
+   tcsetattr( STDIN_FILENO, TCSANOW, &oldt );
+   return ch;
+}
 
 void id_input(int* id)
 {
@@ -7,9 +19,9 @@ void id_input(int* id)
 	*id = _getch();
 #endif
 
-	initscr();
+	//initscr();
 	*id = getch();
-	endwin();
+	//endwin();
 	
 	switch (*id)
 	{

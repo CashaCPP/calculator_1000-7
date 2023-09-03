@@ -22,26 +22,26 @@ double factorial(double namber)
 	}
 }
 
-void plus(double** namber1, double** namber2)
+void plus(double* namber1, double* namber2)
 {
-	printf("%d", "%c", "%d", "%c", "%d", "%c", **namber1, '+', **namber2, '=', **namber1 + **namber2, '\n');
+	printf("%lf", "%c", "%lf", "%c", "%lf", "%c", *namber1, '+', *namber2, '=', *namber1 + *namber2, '\n');
 }
 
-void minus(double** namber1, double** namber2)
+void minus(double* namber1, double* namber2)
 {
-	if ((**namber1 - **namber2) == 993)
+	if ((*namber1 - *namber2) == 993)
 	{
 		int ugodai;
 		int random;
 		srand(time(0));
 
 		printf("Ну чтож дед инсайт выбери число от 1 до 4:");
-		scanf("%d", ugodai);
+		scanf("%lf", ugodai);
 		random = 1 + (rand() % 4);
 		if (ugodai == random)
 		{
 			printf("Молодец угодал, выбери что ты хочешь\n1. Бесконечно 1000-7?\n2. Шутки дед инсайда?\n3. Текст песни дед инсада?\n4. Перезагрузка устройства.\nВаш выбор:");
-			scanf("%d", ugodai);
+			scanf("%lf", ugodai);
 			switch (ugodai)
 			{
 			case(1):
@@ -84,76 +84,71 @@ void minus(double** namber1, double** namber2)
 	}
 	else
 	{
-		printf("%d", "%c", "%d", "%c", "%d", "%c", **namber1, '-', **namber2, '=', **namber1 - **namber2, '\n');
+		printf("%lf", "%c", "%lf", "%c", "%lf", "%c", *namber1, '-', *namber2, '=', *namber1 - *namber2, '\n');
 	}
 }
 
-void umnoh(double** namber1, double** namber2)
+void umnoh(double* namber1, double* namber2)
 {
-	printf("%d", "%c", "%d", "%c", "%d", "%c", **namber1, '*', **namber2, '=', **namber1 * **namber2, '\n');
+	printf("%lf", "%c", "%lf", "%c", "%lf", "%c", *namber1, '*', *namber2, '=', *namber1 * *namber2, '\n');
 }
 
-void delit(double** namber1, double** namber2)
+void delit(double* namber1, double* namber2)
 {
-	printf("%d", "%c", "%d", "%c", "%d", "%c", **namber1, '/', **namber2, '=', **namber1 / **namber2, '\n');
+	printf("%lf", "%c", "%lf", "%c", "%lf", "%c", *namber1, '/', *namber2, '=', *namber1 / *namber2, '\n');
 }
 
-void step(double** namber1, double** namber2)
+void step(double* namber1, double* namber2)
 {
-	printf("%d", "%c", "%d", "%c", "%d", "%c", **namber1, '^', **namber2, '=', pow(**namber1, **namber2), '\n');
+	printf("%lf", "%c", "%lf", "%c", "%lf", "%c", *namber1, '^', *namber2, '=', pow(*namber1, *namber2), '\n');
 }
 
-void koren(double** namber)
+void koren(double* namber)
 {
-	printf("%d", "%c", sqrt(**namber), '\n');
+	printf("%lf", "%c", sqrt(*namber), '\n');
 }
 
-void tang(double** namber)
+void tang(double* namber)
 {
-	printf("%d", "%c", tan(**namber), '\n');
+	printf("%lf", "%c", tan(*namber), '\n');
 }
 
-void inchs(double** namber)
+void inchs(double* namber)
 {
-	printf("%d", "%c", log(**namber), '\n');
-}
-/*
-void inch(double** namber)
-{
-	std::cout << log(**namber) << std::endl;
-}
-*/
-void lg(double** namber)
-{
-	printf("%d", "%c", log10(**namber), '\n');
+	printf("%lf", "%c", log(*namber), '\n');
 }
 
-void sin2(double** namber)
+void lg(double* namber)
 {
-	printf("%d", "%c", sin(**namber), '\n');
+	printf("%lf", "%c", log10(*namber), '\n');
 }
 
-void cos2(double** namber)
+void sin2(double* namber)
 {
-	printf("%d", "%c", cos(**namber), '\n');
+	printf("%lf", "%c", sin(*namber), '\n');
 }
 
-void arcs(double** namber)
+void cos2(double* namber)
 {
-	printf("%d", "%c", asin(**namber), '\n');
+	printf("%lf", "%c", cos(*namber), '\n');
 }
 
-void arcc(double** namber)
+void arcs(double* namber)
 {
-	printf("%d", "%c", acos(**namber), '\n');
+	printf("%lf", "%c", asin(*namber), '\n');
 }
 
-void arct(double** namber)
+void arcc(double* namber)
 {
-	printf("%d", "%c", atan(**namber), '\n');
+	printf("%lf", "%c", acos(*namber), '\n');
 }
 
-void arcg(double** namber1, double** namber2)
+void arct(double* namber)
 {
-	printf("%d", "%c", atan2(**namber1, **namber2), '\n');
+	printf("%lf", "%c", atan(*namber), '\n');
+}
+
+void arcg(double* namber1, double* namber2)
+{
+	printf("%lf", "%c", atan2(*namber1, *namber2), '\n');
 }
