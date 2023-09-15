@@ -24,7 +24,8 @@ double factorial(double namber)
 
 void plus(double* namber1, double* namber2)
 {
-	printf("%lf", "%c", "%lf", "%c", "%lf", "%c", *namber1, '+', *namber2, '=', *namber1 + *namber2, '\n');
+	printf("%lf", "%c", "%lf", "%c", "%lf", "%c", (int)*namber1, '+', (int)*namber2, '=', *namber1 + *namber2, '\n');
+//	printf("%lf", *namber2);
 }
 
 void minus(double* namber1, double* namber2)
@@ -32,16 +33,62 @@ void minus(double* namber1, double* namber2)
 	if ((*namber1 - *namber2) == 993)
 	{
 		int ugodai;
+		int ugodai1;
 		int random;
 		srand(time(0));
 
 		printf("Ну чтож дед инсайт выбери число от 1 до 4:");
-		scanf("%lf", ugodai);
+
+		ugodai1 = getch();
+		switch (ugodai1)
+		{
+		case 49:
+			printf("1\n");
+			ugodai = 1;
+		break;
+		case 50:
+			printf("2\n");
+			ugodai = 2;
+		break;
+		case 51:
+			printf("3\n");
+			ugodai = 3;
+		break;
+		case 52:
+			printf("4\n");
+			ugodai = 4;
+		break;
+		default:
+			break;
+		}
+
 		random = 1 + (rand() % 4);
 		if (ugodai == random)
 		{
 			printf("Молодец угодал, выбери что ты хочешь\n1. Бесконечно 1000-7?\n2. Шутки дед инсайда?\n3. Текст песни дед инсада?\n4. Перезагрузка устройства.\nВаш выбор:");
-			scanf("%lf", ugodai);
+			ugodai1 = getch();
+			switch (ugodai1)
+			{
+			case 49:
+				printf("1\n");
+				ugodai = 1;
+			break;
+			case 50:
+				printf("2\n");
+				ugodai = 2;
+			break;
+			case 51:
+				printf("3\n");
+				ugodai = 3;
+			break;
+			case 52:
+				printf("4\n");
+				ugodai = 4;
+			break;
+			default:
+				break;
+			}
+
 			switch (ugodai)
 			{
 			case(1):
@@ -60,11 +107,13 @@ void minus(double* namber1, double* namber2)
 		}
 		else
 		{
-			printf("Ну чтож не угодал, подожди 6 секунд и увидишь что будет(небойся).");
-			for (int i = 10; i >= 1; i--)
+			printf("Ну чтож не угодал, подожди 6 секунд и увидишь что будет(небойся).\n");
+			
+			for (int i = 6; i >= 1; i--)
 			{
 				std::this_thread::sleep_for(std::chrono::milliseconds(1000));
 			}
+
 			switch (random)
 			{
 			case(1):
@@ -84,23 +133,23 @@ void minus(double* namber1, double* namber2)
 	}
 	else
 	{
-		printf("%lf", "%c", "%lf", "%c", "%lf", "%c", *namber1, '-', *namber2, '=', *namber1 - *namber2, '\n');
+		printf("%lf", "%c", "%lf", "%c", "%lf", "%c", (int)*namber1, '-', (int)*namber2, '=', *namber1 - *namber2, '\n');
 	}
 }
 
 void umnoh(double* namber1, double* namber2)
 {
-	printf("%lf", "%c", "%lf", "%c", "%lf", "%c", *namber1, '*', *namber2, '=', *namber1 * *namber2, '\n');
+	printf("%lf", "%c", "%lf", "%c", "%lf", "%c", (int)*namber1, '*', (int)*namber2, '=', *namber1 * *namber2, '\n');
 }
 
 void delit(double* namber1, double* namber2)
 {
-	printf("%lf", "%c", "%lf", "%c", "%lf", "%c", *namber1, '/', *namber2, '=', *namber1 / *namber2, '\n');
+	printf("%lf", "%c", "%lf", "%c", "%lf", "%c", (int)*namber1, '/', (int)*namber2, '=', *namber1 / *namber2, '\n');
 }
 
 void step(double* namber1, double* namber2)
 {
-	printf("%lf", "%c", "%lf", "%c", "%lf", "%c", *namber1, '^', *namber2, '=', pow(*namber1, *namber2), '\n');
+	printf("%lf", "%c", "%lf", "%c", "%lf", "%c", (int)*namber1, '^', (int)*namber2, '=', pow(*namber1, *namber2), '\n');
 }
 
 void koren(double* namber)

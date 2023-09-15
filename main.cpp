@@ -165,18 +165,59 @@ int main()
 		}
 		else if (id == 71)
 		{
-			scanf("%c", "%c", str_namber.c_str(), str_namber2.c_str());
+			text1 = getchar();
+			str_namber.push_back(text1);
+			while(text1 != ' ')
+			{
+				text1 = getchar();
+				str_namber.push_back(text1);
+			}
+
+			text2 = getchar();
+			str_namber2.push_back(text2);
+			while(text2 != '\n')
+			{
+				text2 = getchar();
+				str_namber2.push_back(text2);
+			}
+
 			input(str_namber, &namber1, str_namber2, &namber2);
 			arcg(&namber1, &namber2);
 		}
 		else
 		{
-			scanf("%c", "%c", "%c", str_namber.c_str(), znak, str_namber2.c_str());
+//znak
+			int znak1;
+
+			text1 = getchar();
+			str_namber.push_back(text1);
+			while(text1 != ' ')
+			{
+				text1 = getchar();
+				str_namber.push_back(text1);
+			}
+			
+			znak1 = getchar();
+			znak = znak1;
+
+			while(znak1 != ' ')
+				znak1 = getchar();
+			
+
+			text2 = getchar();
+			str_namber2.push_back(text2);
+			while(text2 != '\n')
+			{
+				text2 = getchar();
+				str_namber2.push_back(text2);
+			}
+			
 			input(str_namber, &namber1, str_namber2, &namber2);
 			switch (znak)
 			{
 			case('+'):
 				plus(&namber1, &namber2);
+//				printf("%lf", "%c", "%lf", "%c", "%lf", "%c", (int)namber1, '+', (int)namber2, '=', namber1 + namber2, '\n');
 				break;
 			case('-'):
 				minus(&namber1, &namber2);
