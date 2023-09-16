@@ -25,7 +25,6 @@ double factorial(double namber)
 void plus(double* namber1, double* namber2)
 {
 	printf("%lf", "%c", "%lf", "%c", "%lf", "%c", (int)*namber1, '+', (int)*namber2, '=', *namber1 + *namber2, '\n');
-//	printf("%lf", *namber2);
 }
 
 void minus(double* namber1, double* namber2)

@@ -1,11 +1,6 @@
-//#pragma once
-
-
 #ifndef IDINPUT_H_
     #ifdef WINDOWS
-        //#include <conio.h>
     #else
-        //#include <ncurses.h>
         #include <termios.h>
         #include <unistd.h>
     #endif

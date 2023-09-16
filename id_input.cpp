@@ -18,11 +18,7 @@ void id_input(int* id)
 #ifdef WINDOWS
 	*id = _getch();
 #endif
-
-	//initscr();
 	*id = getch();
-	//endwin();
-	
 	switch (*id)
 	{
 	case(8):
@@ -51,15 +47,11 @@ void id_input(int* id)
 		break;
 	case(40):
 		printf("извините такой функции еще нетуб но я усердно работаю над этой функцией.");
-		//initscr();
 		*id = getch();
-		//endwin();
 		break;
 	case(41):
 		printf("извините такой функции еще нетуб но я усердно работаю над этой функцией.");
-		//initscr();
 		*id = getch();
-		//endwin();
 		break;
 	case(48):
 		printf("");

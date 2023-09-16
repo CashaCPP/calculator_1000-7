@@ -9,10 +9,6 @@
 #include "document_instruc.cpp"
 
 
-// 174!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-
-
 int main()
 {
 	setlocale(LC_ALL, "Russian");
@@ -172,6 +168,14 @@ int main()
 				text1 = getchar();
 				str_namber.push_back(text1);
 			}
+		}
+		else if (id == 71)
+		{
+			text1 = getchar();
+			str_namber.push_back(text1);
+			while(text1 != ' ')
+			{
+			}
 
 			text2 = getchar();
 			str_namber2.push_back(text2);
@@ -186,7 +190,6 @@ int main()
 		}
 		else
 		{
-//znak
 			int znak1;
 
 			text1 = getchar();
@@ -217,7 +220,6 @@ int main()
 			{
 			case('+'):
 				plus(&namber1, &namber2);
-//				printf("%lf", "%c", "%lf", "%c", "%lf", "%c", (int)namber1, '+', (int)namber2, '=', namber1 + namber2, '\n');
 				break;
 			case('-'):
 				minus(&namber1, &namber2);
@@ -236,14 +238,8 @@ int main()
 			}
 
 		}
-
-		//delete namber1;
-		//namber1 = nullptr;
-		//delete namber2;
-		//namber2 = nullptr;
-//		system("pause");
 		printf("\n");
-		printf("\n");
+		printf("/////////////////////////\n");
 	}
 	return 0;
 }
